@@ -437,11 +437,22 @@ header {
     height: 1.5rem;
 }
 
+
+/*RESPO*/
+
 #main {
-    margin-left: var(--aside-width);
-    padding: var(--mypadding);
+    margin-left: 250px;
+    padding: 250px 20px 20px 250px;
     padding-top: calc(var(--mypadding) + var(--nav-containers-height)*2);
 }
+@supports(display: grid){
+    #main {
+        margin-left: var(--aside-width);
+        padding: var(--mypadding);
+        padding-top: calc(var(--mypadding) + var(--nav-containers-height)*2);
+    }
+}
+
 
 
 
@@ -508,6 +519,8 @@ nav,
     font: var(--my-container-title);
     margin-bottom: 1rem;
 }
+
+
 
 .tile {
     display: -webkit-box;
@@ -696,6 +709,10 @@ aside>ul>li a img {
 #tiles,
 #table {
     cursor: default;
+}
+
+@supports(display: grid){
+
 }
 
 @media only screen and (max-width: 1280px) {
