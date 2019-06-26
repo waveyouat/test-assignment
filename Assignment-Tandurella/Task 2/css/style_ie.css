@@ -1,3 +1,4 @@
+*{color:red;}
 header:after{display:block;content: "You are using an older browser"}
 main{padding-left: 300px;
 padding-top: 300px;}
