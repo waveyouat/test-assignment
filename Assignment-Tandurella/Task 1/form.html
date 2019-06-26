@@ -1,0 +1,116 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/style.css">
+		<title>Form</title>
+		<style>
+form {
+	display:flex;
+	flex-direction: column;
+	font-size:1.25rem;
+	line-height: 1.5rem;
+	font-family: sans-serif;
+}
+.row {
+	padding-bottom:2.5rem
+}
+
+.form-group {
+	padding-bottom: 1rem;
+}
+
+label,input {
+	min-width: 250px;
+	vertical-align: top;
+	line-height: 2.5rem;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+}
+
+select{
+	height:2.5rem;
+}
+input {
+	margin-top: -4px;
+}
+input, textarea {
+	border:solid 1px darkgray;border-radius: 4px;
+	max-width: 600px;
+	width:100%;
+	font-size: 1.25rem;
+	padding-left: 1.25rem;
+}
+			.radio-centered{
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-evenly;
+				margin-bottom: 1.25rem;
+			}
+			.radio-centered > label {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+			}
+.radio-centered > label > input {
+	width: 2em;
+}
+@media only screen and (max-width: 725px) {
+	.radio-centered{flex-direction: column-reverse;}
+}
+
+
+		</style>
+	</head>
+	<body>
+		<h2>HTML Form</h2>
+		<form action="#" method="post">
+
+			<div class="row">
+				<div class="form-group">
+					<label for="name">Name</label>
+					<input type="text" id="name" value="">
+				</div>
+				<div class="form-group">
+					<label for="surname">Surname</label>
+					<input type="text" id="surname" value="">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="form-group">
+					<label for="email">E-mail address</label>
+					<input type="email" id="email" value="">
+				</div>
+				<div class="form-group">
+					<label for="dob">Date of birth</label>
+					<input type="date" id="dob" value="">
+				</div>
+			</div>
+
+			<div class="row">
+				<label for="description">Description</label>
+				<textarea id="description" rows="5" cols="50" placeholder="Describe yourself here..."></textarea>
+			</div>
+
+			<div class="row">
+				<div class="form-group"><label>Gender</label>
+					<div class="radio-centered">
+						<label><input type="radio" name="gender" value="Male"><span>Male</span></label>
+						<label><input type="radio" name="gender" value="Female"><span>Female</span></label>
+						<label><input type="radio" name="gender" value="Prefer not to say"><span>Prefer not to say</span></label>
+					</div>
+
+					<label for="language">What do you prefer?</label>
+					<select id="language">
+						<option value="html">HTML</option>
+						<option value="javascript">Javascript</option>
+						<option value="css">CSS</option>
+					</select>
+				</div>
+			</div>
+
+		</form>
+	</body>
+</html>
