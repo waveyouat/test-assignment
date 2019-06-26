@@ -1,25 +1,3 @@
-:root {
-    --mypadding: 2.5rem;
-    --mymargin: 2.5rem;
-    --mybackground: white;
-    --myborder: solid 2px rgba(0, 0, 0, .05);
-    --myfont: 14px arial, sans-serif;
-    --mytextcolour: darkgray;
-    --my-container-title: bold 2.5em;
-    --aside-width: 8%;
-
-    --logo-height: 4rem;
-    --nav-containers-height: var(--logo-height);
-}
-
-* {
-    font: var(--myfont);
-    color: var(--mytextcolour);
-    box-sizing: border-box;
-    letter-spacing: 1px;
-}
-
-
 /*-------
 CSS RESET*/
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -162,6 +140,26 @@ table {
 /*----------------------------------
 -------------MY STYLES----------------
 ------------------------------------*/
+:root {
+    --mypadding: 2.5rem;
+    --mymargin: 2.5rem;
+    --mybackground: white;
+    --myborder: solid 2px rgba(0, 0, 0, .05);
+    --myfont: 14px arial, sans-serif;
+    --mytextcolour: darkgray;
+    --my-container-title: bold 2.5em;
+    --aside-width: 8%;
+
+    --logo-height: 4rem;
+    --nav-containers-height: var(--logo-height);
+}
+
+* {
+    font: var(--myfont);
+    color: var(--mytextcolour);
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
 
 
 a {
@@ -204,6 +202,7 @@ h3 {
 
 /*-------
 HEADER*/
+header {width:100%;}
 header {
     position: fixed;
     padding-top: 1.5rem;
