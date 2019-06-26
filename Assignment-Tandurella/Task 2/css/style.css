@@ -106,7 +106,7 @@ header {
 }
 /*-------
 MAIN*/
-main {
+#main {
     margin-left:7rem;
 }
 #grid{
@@ -241,7 +241,7 @@ header{
     height: 1.5rem;
 }
 
-main{
+#main{
     margin-left: var(--aside-width);
     padding:var(--mypadding);
     padding-top: calc(var(--mypadding) + var(--nav-containers-height)*2);
@@ -336,7 +336,7 @@ h3{color:black;}
 th {font-weight: bold;}
 
 
-main{background-color: rgba(0,0,0,.03)}
+#main{background-color: rgba(0,0,0,.03)}
 aside > ul > li {
     margin-top: 1.25rem;
     border-radius: 50%;
@@ -400,7 +400,7 @@ overflow: hidden;}
     #burger{max-height:15000000px;visibility:visible;top:0;left:0;height: 96px;}
     #logo-mobile > img{width:4em;}
     header,aside{display:none;}
-    main{margin-left: 0;}
+    #main{margin-left: 0;}
 }
 
 @media only screen and (max-width: 570px) {
