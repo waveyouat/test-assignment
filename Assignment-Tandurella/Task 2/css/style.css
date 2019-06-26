@@ -164,7 +164,6 @@ nav {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    //border-bottom:solid grey 1px;
 
 }
 
@@ -234,10 +233,27 @@ aside img {
 #logo-mobile {
     max-width: 80px;
 }
+@supports(display: grid){
+    header {
+        margin-left: 5rem;
 
+    }
+    header {
+        position: fixed;
+        margin-left: var(--aside-width);
+        width: calc(100% - var(--aside-width));
+        padding-right: var(--mypadding);
+        padding-left: var(--mypadding);
+        background: white;
+        -webkit-box-shadow: 300px 0 0 white, 0 2px 4px lightgray;
+        box-shadow: 300px 0 0 white, 0 2px 4px lightgray;
+    }
+    aside.container,
 header {
-    margin-left: 5rem;
+    padding-top: 1.5rem;
 }
+}
+
 
 /*-------
 MAIN*/
@@ -429,7 +445,7 @@ aside {
     width: var(--aside-width);
 }
 
-header {
+/*header {
     position: fixed;
     margin-left: var(--aside-width);
     width: calc(100% - var(--aside-width));
@@ -438,7 +454,7 @@ header {
     background: white;
     -webkit-box-shadow: 300px 0 0 white, 0 2px 4px lightgray;
     box-shadow: 300px 0 0 white, 0 2px 4px lightgray;
-}
+}*/
 
 #breadcrumb {
     height: 1.5rem;
@@ -494,10 +510,10 @@ nav,
     justify-content: space-between;
 }
 
-aside.container,
+/*aside.container,
 header {
     padding-top: 1.5rem;
-}
+}*/
 
 nav,
 #logo {
