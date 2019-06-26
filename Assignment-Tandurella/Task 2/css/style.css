@@ -233,6 +233,14 @@ aside img {
 #logo-mobile {
     max-width: 80px;
 }
+#main {
+    margin-left: var(--aside-width);
+    padding: var(--mypadding);
+    padding-top: calc(var(--mypadding) + var(--nav-containers-height)*2);
+}
+#main {
+    margin-left: 7rem;
+}
 @supports(display: grid){
     header {
         margin-left: 5rem;
@@ -252,14 +260,22 @@ aside img {
 header {
     padding-top: 1.5rem;
 }
+main {
+    margin-left: 7rem;
+}
+main {
+    margin-left: var(--aside-width);
+    padding: var(--mypadding);
+    padding-top: calc(var(--mypadding) + var(--nav-containers-height)*2);
+}
 }
 
 
 /*-------
 MAIN*/
-#main {
+/*main {
     margin-left: 7rem;
-}
+}*/
 
 #grid {
     display: grid;
@@ -460,11 +476,11 @@ aside {
     height: 1.5rem;
 }
 
-#main {
+/*main {
     margin-left: var(--aside-width);
     padding: var(--mypadding);
     padding-top: calc(var(--mypadding) + var(--nav-containers-height)*2);
-}
+}*/
 
 
 
@@ -637,7 +653,7 @@ th {
 }
 
 
-#main {
+main {
     background-color: rgba(0, 0, 0, .03)
 }
 
@@ -783,7 +799,7 @@ aside>ul>li a img {
         display: none;
     }
 
-    #main {
+    main {
         margin-left: 0;
     }
 }
