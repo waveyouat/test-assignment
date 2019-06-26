@@ -202,8 +202,8 @@ h3 {
 
 /*-------
 HEADER*/
-header {width:100%;}
-header {
+#header {width:100%;}
+#header {
     position: fixed;
     padding-top: 1.5rem;
     margin-left: var(--aside-width);
@@ -214,7 +214,7 @@ header {
     box-shadow: 300px 0 0 white, 0 2px 4px lightgray;
 }
 
-nav {
+#nav {
     margin-top: 0;
     height: var(--nav-containers-height);
     display: -ms-flexbox;
@@ -228,7 +228,7 @@ nav {
 
 }
 
-nav>ul {
+#nav > ul {
     display: -ms-inline-flexbox;
     display: inline-flex;
     -ms-flex-direction: row;
@@ -237,18 +237,18 @@ nav>ul {
         align-items: center;
 }
 
-nav>ul>li {
+#nav>ul>li {
     padding-right: 2rem;
 }
 
-nav li:last-of-type {
+#nav li:last-of-type {
     background: lightgray;
     padding: 1em 4em;
     color: white;
     cursor: pointer;
 }
 
-nav li:last-of-type>a {
+#nav li:last-of-type>a {
     color: white;
 }
 
@@ -344,7 +344,7 @@ SEARCH FIELD*/
 
 /*-------
 ASIDE*/
-aside {
+#aside {
     width: var(--aside-width);
     background: lightgray;
     position: fixed;
@@ -363,26 +363,26 @@ aside {
 
 }
 
-aside img {
+#aside img {
     max-width: 60px;
 }
 
-aside.container {
+#aside.container {
     padding-top: 1.5rem;
 }
 
-aside>ul>li {
+#aside>ul>li {
     margin-top: 1.25rem;
     border-radius: 50%;
 }
 
-aside>ul>li a {
+#aside>ul>li a {
     padding-bottom: 0;
     margin-bottom: 1rem;
     height: 100%;
 }
 
-aside>ul>li a img {
+#aside>ul>li a img {
     border: 2px lightgray solid;
     border-radius: 50%;
     width: 49px;
@@ -700,8 +700,8 @@ MOBILE*/
         width: 4em;
     }
 
-    header,
-    aside {
+    #header,
+    #aside {
         display: none;
     }
 
