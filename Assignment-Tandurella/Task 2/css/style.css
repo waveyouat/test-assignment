@@ -257,7 +257,7 @@ header {
 
 /*-------
 MAIN*/
-main {
+#main {
     margin-left: 7rem;
 }
 
@@ -460,7 +460,7 @@ aside {
     height: 1.5rem;
 }
 
-main {
+#main {
     margin-left: var(--aside-width);
     padding: var(--mypadding);
     padding-top: calc(var(--mypadding) + var(--nav-containers-height)*2);
@@ -637,7 +637,7 @@ th {
 }
 
 
-main {
+#main {
     background-color: rgba(0, 0, 0, .03)
 }
 
@@ -783,7 +783,7 @@ aside>ul>li a img {
         display: none;
     }
 
-    main {
+    #main {
         margin-left: 0;
     }
 }
