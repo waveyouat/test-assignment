@@ -419,7 +419,7 @@ MAIN*/
 #grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 50% 50%;
+    -ms-grid-columns:1fr 1fr;
     grid-template-columns: 50% 50%;
 }
 
@@ -676,6 +676,7 @@ MOBILE*/
     #tiles {
         grid-template-columns: 1fr 1fr;
         column-gap: 2.5em;
+        /*TODO - IE*/
     }
 }
 
