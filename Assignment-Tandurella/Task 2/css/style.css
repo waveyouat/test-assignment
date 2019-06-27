@@ -216,7 +216,7 @@ HEADER*/
     width: calc(100% - var(--aside-width));
     padding-right: 50px;
     padding-right: var(--mypadding);
-    padding-left: 150px;
+    padding-left: 130px;
     padding-left: var(--mypadding);
     background: white;
     box-shadow: 300px 0 0 white, 0 2px 4px lightgray;
@@ -275,6 +275,12 @@ BREADCRUMB SECTION*/
         align-items: center;
     -ms-flex-pack: justify;
         justify-content: space-between;
+        padding-bottom:18px;
+}
+@supports(display: grid){
+    #breadcrumb{
+        padding-bottom:0;
+    }
 }
 
 #breadcrumb>ul {
@@ -416,6 +422,10 @@ ASIDE*/
         align-items: center;
     -ms-flex-pack: justify;
         justify-content: space-between;
+        padding:4px;
+}
+@supports(display: grid){
+    #logo{padding:0;}
 }
 
 
@@ -428,8 +438,8 @@ ASIDE*/
 MAIN*/
 #grid,#main,#tabs,#tiles,#table{display: block;}
 #main{
-    padding: 100px 20px 50px 100px;
-    padding-top:100px;}
+    padding: 150px 20px 50px 100px;
+    padding-top:150px;}
 
 @supports(display: grid){
     #grid {
@@ -588,6 +598,7 @@ TILES*/
         justify-content: center;
     width:45%;
         min-height: 16em;
+        padding-top: 38px;
         
 }
 @supports(display: grid){
@@ -596,7 +607,8 @@ TILES*/
         width:auto;
         display: -ms-flexbox;
     display: flex;
-        margin-left: 1.5rem;min-height: auto;}
+        margin-left: 1.5rem;min-height: auto;
+    padding-top: 0;}
 }
 
 .tile>div {
