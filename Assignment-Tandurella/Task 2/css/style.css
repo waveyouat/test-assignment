@@ -216,7 +216,7 @@ HEADER*/
     width: calc(100% - var(--aside-width));
     padding-right: 50px;
     padding-right: var(--mypadding);
-    padding-left: 100px;
+    padding-left: 200px;
     padding-left: var(--mypadding);
     background: white;
     box-shadow: 300px 0 0 white, 0 2px 4px lightgray;
@@ -514,9 +514,10 @@ TABS*/
     border-bottom: 1px lightgray solid;
     cursor: pointer;
     margin-bottom: 28px;
+    padding-bottom: 28px;
 }
 @supports(display: grid){
-    #switcher{margin-bottom: 0;}
+    #switcher{margin-bottom: 0;padding-bottom: 0;}
 }
 
 #switcher>span {
