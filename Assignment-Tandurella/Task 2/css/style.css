@@ -216,7 +216,7 @@ HEADER*/
     width: calc(100% - var(--aside-width));
     padding-right: 50px;
     padding-right: var(--mypadding);
-    padding-left: 200px;
+    padding-left: 150px;
     padding-left: var(--mypadding);
     background: white;
     box-shadow: 300px 0 0 white, 0 2px 4px lightgray;
@@ -514,7 +514,7 @@ TABS*/
     border-bottom: 1px lightgray solid;
     cursor: pointer;
     margin-bottom: 28px;
-    padding-bottom: 28px;
+    padding-bottom: 18px;
 }
 @supports(display: grid){
     #switcher{margin-bottom: 0;padding-bottom: 0;}
@@ -576,21 +576,27 @@ TILES*/
     color: black;
 
 }
-
+.spacer{display:inline-block;width:8%;height: 20px;}
 .tile {
-    display: -ms-flexbox;
-    display: flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     -ms-flex-direction: row;
         flex-direction: row;
     -ms-flex-align: center;
         align-items: center;
     -ms-flex-pack: center;
         justify-content: center;
-    
+    width:45%;
         min-height: 16em;
+        
 }
 @supports(display: grid){
-    .tile{margin-left: 1.5rem;min-height: auto;}
+    .spacer{display:none;}
+    .tile{
+        width:auto;
+        display: -ms-flexbox;
+    display: flex;
+        margin-left: 1.5rem;min-height: auto;}
 }
 
 .tile>div {
