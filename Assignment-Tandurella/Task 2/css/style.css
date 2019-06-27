@@ -415,31 +415,35 @@ ASIDE*/
 
 /*-------
 MAIN*/
+#grid,#main,#tabs,#tiles,#table{display: block;}
 
-#grid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns:1fr 1fr;
-    grid-template-columns: 50% 50%;
-    grid-template-areas:"tabs tiles"
-                       "table table";
+@supports(display: grid){
+    #grid {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns:1fr 1fr;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:"tabs tiles"
+                           "table table";
+    }
+    #tabs{-ms-grid-row:1; 
+        -ms-grid-column:1; 
+        grid-area:tabs;}
+    #tiles{-ms-grid-row:1; 
+        -ms-grid-column:2;
+        grid-area:tiles; }
+    #table{-ms-grid-row:2; 
+        -ms-grid-column:1; 
+        -ms-grid-column-span:2;
+        grid-area:table;}
+    #main {
+        margin-left: var(--aside-width);
+        padding: var(--mypadding);
+        padding-top: calc(var(--mypadding) + var(--nav-containers-height)*2);
+        background-color: rgba(0, 0, 0, .03)
+    }
 }
-#tabs{-ms-grid-row:1; 
-    -ms-grid-column:1; 
-    grid-area:tabs;}
-#tiles{-ms-grid-row:1; 
-    -ms-grid-column:2;
-    grid-area:tiles; }
-#table{-ms-grid-row:2; 
-    -ms-grid-column:1; 
-    -ms-grid-column-span:2;
-    grid-area:table;}
-#main {
-    margin-left: var(--aside-width);
-    padding: var(--mypadding);
-    padding-top: calc(var(--mypadding) + var(--nav-containers-height)*2);
-    background-color: rgba(0, 0, 0, .03)
-}
+
 
 
 
