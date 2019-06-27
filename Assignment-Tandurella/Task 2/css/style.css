@@ -214,12 +214,15 @@ HEADER*/
     padding-top: 1.5rem;
     margin-left: var(--aside-width);
     width: calc(100% - var(--aside-width));
-    padding-right: 100px;
+    padding-right: 150px;
     padding-right: var(--mypadding);
     padding-left: 50px;
     padding-left: var(--mypadding);
     background: white;
     box-shadow: 300px 0 0 white, 0 2px 4px lightgray;
+}
+@supports(display: grid){
+
 }
 
 #nav {
@@ -578,7 +581,11 @@ TILES*/
         align-items: center;
     -ms-flex-pack: center;
         justify-content: center;
-    margin-left: 1.5rem;
+    
+    height:150px;
+}
+@supports(display: grid){
+    .tile{margin-left: 1.5rem;height: auto;}
 }
 
 .tile>div {
