@@ -214,7 +214,7 @@ HEADER*/
     padding-top: 1.5rem;
     margin-left: var(--aside-width);
     width: calc(100% - var(--aside-width));
-    padding-right: 150px;
+    padding-right: 220px;
     padding-right: var(--mypadding);
     padding-left: 50px;
     padding-left: var(--mypadding);
@@ -582,10 +582,10 @@ TILES*/
     -ms-flex-pack: center;
         justify-content: center;
     
-    height:150px;
+        min-height: 16em;
 }
 @supports(display: grid){
-    .tile{margin-left: 1.5rem;height: auto;}
+    .tile{margin-left: 1.5rem;min-height: auto;}
 }
 
 .tile>div {
