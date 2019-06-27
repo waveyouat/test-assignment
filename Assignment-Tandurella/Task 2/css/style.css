@@ -214,9 +214,9 @@ HEADER*/
     padding-top: 1.5rem;
     margin-left: var(--aside-width);
     width: calc(100% - var(--aside-width));
-    padding-right: 220px;
+    padding-right: 50px;
     padding-right: var(--mypadding);
-    padding-left: 50px;
+    padding-left: 100px;
     padding-left: var(--mypadding);
     background: white;
     box-shadow: 300px 0 0 white, 0 2px 4px lightgray;
@@ -513,6 +513,10 @@ TABS*/
         justify-content: space-evenly;
     border-bottom: 1px lightgray solid;
     cursor: pointer;
+    margin-bottom: 28px;
+}
+@supports(display: grid){
+    #switcher{margin-bottom: 0;}
 }
 
 #switcher>span {
