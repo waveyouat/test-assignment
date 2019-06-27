@@ -155,7 +155,9 @@ table {
 }
 
 * {
+    font:14px arial, sans-serif;
     font: var(--myfont);
+    color:darkgray;
     color: var(--mytextcolour);
     box-sizing: border-box;
     letter-spacing: 1px;
@@ -163,6 +165,7 @@ table {
 
 
 a {
+    font:14px arial, sans-serif;
     font: var(--myfont);
     color: darkgray;
     letter-spacing: 2px;
@@ -189,6 +192,8 @@ h3 {
 }
 
 .container {
+    background: white;
+    border: solid 2px rgba(0, 0, 0, .05);
     border: var(--myborder);
     background: var(--mybackground);
     margin-bottom: 1.5rem;
@@ -196,6 +201,7 @@ h3 {
 
 .container h3 {
     text-transform: capitalize;
+    font:bold 2.5em;
     font: var(--my-container-title);
     margin-bottom: 1rem;
 }
@@ -208,7 +214,9 @@ HEADER*/
     padding-top: 1.5rem;
     margin-left: var(--aside-width);
     width: calc(100% - var(--aside-width));
+    padding-right: 100px;
     padding-right: var(--mypadding);
+    padding-left: 50px;
     padding-left: var(--mypadding);
     background: white;
     box-shadow: 300px 0 0 white, 0 2px 4px lightgray;
@@ -417,8 +425,8 @@ ASIDE*/
 MAIN*/
 #grid,#main,#tabs,#tiles,#table{display: block;}
 #main{
-    padding: 300px 20px 50px 300px;
-    padding-top:300px;}
+    padding: 100px 20px 50px 100px;
+    padding-top:100px;}
 
 @supports(display: grid){
     #grid {
