@@ -416,6 +416,7 @@ ASIDE*/
 /*-------
 MAIN*/
 #grid,#main,#tabs,#tiles,#table{display: block;}
+#main{margin-left:250px;}
 
 @supports(display: grid){
     #grid {
