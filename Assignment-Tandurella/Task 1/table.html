@@ -3,6 +3,16 @@
 		<link rel="stylesheet" href="css/style.css">
 		<title>Table</title>
 		<style>
+			#cont{
+				width: 60%;
+    margin: 0 auto;
+    padding: 71px;
+    border: solid lightgray;
+    background: gainsboro;
+    box-shadow: 28px 28px 0 darkgrey;
+    margin-bottom: 60px;
+    border-radius: 8px;
+			}
 			table {
 				border: solid 1px darkgray;
 				font-size: 1.25rem;
@@ -28,10 +38,43 @@
 
 
 
+
+
+			table {
+    width: 100%;
+}
+
+
+td {
+		padding: 1rem 1rem .75rem .25rem;
+		padding-left: .75em;
+}
+
+tbody tr:hover {
+    background-color: rgba(0, 0, 0, .02)
+}
+
+td:hover {
+	background-color: ghostwhite;
+    box-shadow: inset 1px 1px 2px grey;
+    cursor: cell;
+}
+
+th {
+    font-weight: bold;
+}
+
+tr {
+    border-bottom: 1px lightgray solid;
+    padding: 1rem 0 .75rem .25rem;
+    height: 2.5rem;
+    text-align: left;
+}
 		</style>
 	</head>
 	<body>
 		<h2>HTML Table</h2>
+		<div id="cont">
 		<table>
 		  <tr>
 		    <th>Company</th>
@@ -69,5 +112,6 @@
 		    <td>Italy</td>
 		  </tr>
 		</table>
+	</div>
 	</body>
 </html>
